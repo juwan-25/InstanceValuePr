@@ -20,6 +20,11 @@ namespace MyApp // Note: actual namespace depends on the project name.
             Console.WriteLine(Product.origin);
             Console.WriteLine(product.name+ "/" +product.price);
             Console.WriteLine(product.ToString());
+
+            List<student> list = new List<student>();
+            list.Add(new student() { name = "무민", grade = 1 });
+            list.Add(new student() { name = "무민마마", grade = 2 });
+            list.Add(new student() { name = "무민파파", grade = 3 });
         }
     }
 }
