@@ -17,6 +17,9 @@ namespace MyApp // Note: actual namespace depends on the project name.
             Product product3 = new Product() { price = 90000 };
             Product product4 = new Product() { price = 2100, name = "고구마" }; // 순서 바꿔서도 가능
 
+            Console.WriteLine(Product.origin);
+            Console.WriteLine(product.name+ "/" +product.price);
+            Console.WriteLine(product.ToString());
         }
     }
 }
