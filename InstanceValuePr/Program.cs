@@ -19,12 +19,24 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
             Console.WriteLine(Product.origin);
             Console.WriteLine(product.name+ "/" +product.price);
-            Console.WriteLine(product.ToString());
+            Console.WriteLine(product);
 
             List<student> list = new List<student>();
             list.Add(new student() { name = "무민", grade = 1 });
             list.Add(new student() { name = "무민마마", grade = 2 });
             list.Add(new student() { name = "무민파파", grade = 3 });
+
+            List<student> list1 = new List<student>()
+            {
+                new student() { name = "무민", grade = 1 },
+                new student() { name = "무민마마", grade = 2 },
+                new student() { name = "무민파파", grade = 3 }
+            };
+
+            foreach (student student in list1)
+            {
+                Console.WriteLine(student);
+            }
         }
     }
 }
