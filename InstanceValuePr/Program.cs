@@ -6,7 +6,9 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Product product = new Product();
+            product.name = "감자";
+            product.price = 2000; 
         }
     }
 }
